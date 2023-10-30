@@ -132,25 +132,6 @@ export PATH=$PATH:/$HOME/bin
 
 export GPG_TTY=$(tty)
 
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/lincoln/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/lincoln/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/lincoln/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/lincoln/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# deactivate conda
-conda deactivate
-
 # Java 17 jdk-17.0.8+7 install path:
 export PATH=$PATH:$HOME/jdk-17.0.8+7/bin/
 
