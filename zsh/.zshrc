@@ -120,6 +120,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=~/.local/bin:~/.cargo/bin:/usr/local/go/bin:$PATH
 
 alias ls='exa --icons'
+alias bat='batcat'
 
 export PATH=~/.bin/bin/:$PATH
 
@@ -131,12 +132,4 @@ export PATH=$PATH:/$HOME/bin
 # [ -f ~/.zshrc ] && echo -e '\nexport GPG_TTY=$(tty)' >> ~/.zshrc
 
 export GPG_TTY=$(tty)
-
-# Java 17 jdk-17.0.8+7 install path:
-export PATH=$PATH:$HOME/jdk-17.0.8+7/bin/
-
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
