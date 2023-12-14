@@ -119,7 +119,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=~/.local/bin:~/.cargo/bin:/usr/local/go/bin:$PATH
 
-alias ls='exa --icons'
+alias ls='eza --icons'
 alias bat='batcat'
 
 export PATH=~/.bin/bin/:$PATH
