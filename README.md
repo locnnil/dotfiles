@@ -35,4 +35,7 @@ stow zsh
 
 # Apply for neovim:
 stow neovim
+
+# Apply for Alacritty
+stow alacritty
 ```
