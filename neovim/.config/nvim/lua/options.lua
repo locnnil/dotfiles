@@ -20,11 +20,18 @@ vim.o.wic = true
 vim.o.laststatus = 3
 
 -- make harpoon useless
-vim.cmd('autocmd BufReadPost * norm \'"')
+vim.api.nvim_create_autocmd({ "BufReadPost" }, {
+	callback = function()
+		vim.cmd('norm \'"')
+	end,
+})
 
 -- set leader
 vim.g.mapleader = ','
 
 -- don't split on word when wrapping lines
 vim.o.linebreak = true
+
+-- undo buffer persists after close
+vim.opt.undofile = true
 
