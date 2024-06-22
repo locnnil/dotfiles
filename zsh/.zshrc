@@ -82,6 +82,7 @@ plugins=(
   virtualenv
   zsh-syntax-highlighting
   zsh-autosuggestions
+  asdf
 )
 
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time virtualenv)
@@ -144,3 +145,6 @@ PERL_MM_OPT="INSTALL_BASE=/home/lincoln/perl5"; export PERL_MM_OPT;
 
 ### Neovim shorcut
 alias vim=nvim
+
+### Golang binaries
+export PATH=$PATH:$HOME/go/bin
