@@ -1,11 +1,2 @@
-require('plugins')
-require('options')
-require('keymap')
-require('lsp')
-require('nvim-cmp')
-require('relativenumber')
-require('noswap')
-require('treesitter')
-require('statusline')
-require('netrw')
-require('colors')
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
