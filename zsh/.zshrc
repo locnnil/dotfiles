@@ -153,3 +153,7 @@ eval "$(~/.local/bin/mise activate zsh)"
 
 # OLD: 'LESS=-R'
 export LESS="-RFX"
+
+# envs for debian helper (dh) tools
+export DEBEMAIL=lincoln.wallace@canonical.com
+export DEBFULLNAME="Lincoln Wallace"
