@@ -1,0 +1,5 @@
+{
+    "description": "Stop uploads to the archive with or to ppa without ~ppa suffix.",
+    "path": "mymistakes.check_for_ppa_to_nonppa",
+    "pre": true
+}

@@ -1,0 +1,5 @@
+{
+    "description": "Stop if uploading with root@ or ubuntu@ email adresses.",
+    "path": "mymistakes.bad_author",
+    "pre": true
+}

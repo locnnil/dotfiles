@@ -1,0 +1,11 @@
+{
+    "+hooks": [
+        "placeholderbug",
+        "ppaforppaonly",
+        "badauthor",
+        "releasemismatch"
+    ],
+    "-hooks": [
+        "supported-distribution"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "+hooks": [
+        "placeholderbug",
+        "ppaforppaonly",
+        "badauthor",
+        "nobug",
+        "updatemaintainer",
+        "gitubuntu",
+        "releasemismatch"
+    ]
+}

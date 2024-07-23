@@ -1,0 +1,5 @@
+{
+    "description": "Warn about mismatching suffixesg e.g. focal with a XX.YY not being 20.04",
+    "path": "mymistakes.check_release_mismatch",
+    "pre": true
+}

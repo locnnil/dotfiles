@@ -1,0 +1,5 @@
+{
+    "description": "Stop if using common placeholder numbers as bug reference.",
+    "path": "mymistakes.check_for_placeholder",
+    "pre": true
+}
