@@ -157,3 +157,8 @@ export LESS="-RFX"
 # envs for debian helper (dh) tools
 export DEBEMAIL=lincoln.wallace@canonical.com
 export DEBFULLNAME="Lincoln Wallace"
+
+# Increase zsh history to 1M
+export HISTSIZE=1000000
+export SAVEHIST=1000000
+
