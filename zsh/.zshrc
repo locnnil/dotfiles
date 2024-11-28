@@ -125,7 +125,6 @@ alias bat='batcat'
 
 export PATH=~/.bin/bin/:$PATH
 
-[ -f "/home/lincoln/.ghcup/env" ] && source "/home/lincoln/.ghcup/env" # ghcup-env
 
 export PATH=$PATH:/$HOME/bin
 
@@ -147,6 +146,9 @@ PERL_MM_OPT="INSTALL_BASE=/home/lincoln/perl5"; export PERL_MM_OPT;
 alias vi=nvim
 alias vim=nvim
 
+# For fd program
+alias fd=fdfind
+
 ### Golang binaries
 export PATH=$PATH:$HOME/go/bin
 eval "$(~/.local/bin/mise activate zsh)"
@@ -162,3 +164,5 @@ export DEBFULLNAME="Lincoln Wallace"
 export HISTSIZE=1000000
 export SAVEHIST=1000000
 
+
+[ -f "/home/lincoln/.ghcup/env" ] && . "/home/lincoln/.ghcup/env" # ghcup-env
