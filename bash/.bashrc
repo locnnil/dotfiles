@@ -120,3 +120,5 @@ fi
 # Binaries installed by rustup
 export PATH=$PATH:$HOME/.cargo/bin/alacritty
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
