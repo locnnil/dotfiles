@@ -166,3 +166,4 @@ export SAVEHIST=1000000
 
 
 [ -f "/home/lincoln/.ghcup/env" ] && . "/home/lincoln/.ghcup/env" # ghcup-env
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
