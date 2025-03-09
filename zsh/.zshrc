@@ -200,3 +200,5 @@ unset __conda_setup
 conda deactivate
 # <<< conda initialize <<<
 
+## Export Clang to PATH
+export PATH=$PATH:/usr/lib/llvm-19/bin/
