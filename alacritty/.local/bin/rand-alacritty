@@ -1,0 +1,20 @@
+#!/usr/bin/bash
+
+# Get the directory where the script resides
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Read the file into an array
+mapfile -t lines <"$SCRIPT_DIR/colors"
+
+# Get the number of items in the array
+num_lines=${#lines[@]}
+
+# Generate a random index between 0 and (num_lines - 1)
+random_index=$((RANDOM % num_lines))
+
+# Access the randomly selected element
+echo "Choosed index: $random_index" | systemd-cat
+echo "Choosed line: ${lines[$random_index]}" | systemd-cat
+pickedcolor=${lines[$random_index]}
+
+alacritty --option="colors.primary.background='${pickedcolor}'"
