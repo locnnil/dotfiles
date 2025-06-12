@@ -1,13 +1,51 @@
 #!/usr/bin/bash
 
+help() {
+  echo "Usage: $0 [-i number | --index number] [-c color | --color color]"
+}
+
+customindex=
+customcolor=
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+  -i | --index)
+    customindex="$2"
+    shift 2
+    ;;
+  -c | --color)
+    customcolor="$2"
+    shift 2
+    ;;
+  -h | --help)
+    help
+    exit 0
+    ;;
+  *)
+    help
+    echo "Unknown option: $1"
+    ;;
+  esac
+done
+
 # Get the directory where the script resides
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Read the file into an array
-mapfile -t lines <"$SCRIPT_DIR/colors"
+mapfile -t lines <"$BASEDIR/colors"
 
 # Get the number of items in the array
 num_lines=${#lines[@]}
+
+if [[ -n $customindex && $customindex -lt $num_lines ]]; then
+  alacritty --option="colors.primary.background='${lines[$customindex]}'"
+  exit 0
+fi
+
+if [[ -n $customcolor ]]; then
+  alacritty --option="colors.primary.background='${customcolor}'"
+  exit 0
+fi
 
 # Generate a random index between 0 and (num_lines - 1)
 random_index=$((RANDOM % num_lines))
