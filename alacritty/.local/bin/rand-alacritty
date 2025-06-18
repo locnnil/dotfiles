@@ -55,4 +55,4 @@ echo "Choosed index: $random_index" | systemd-cat
 echo "Choosed line: ${lines[$random_index]}" | systemd-cat
 pickedcolor=${lines[$random_index]}
 
-alacritty --option="colors.primary.background='${pickedcolor}'"
+exec 'alacritty --option="colors.primary.background='${pickedcolor}'"'
