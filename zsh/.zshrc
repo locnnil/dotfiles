@@ -215,3 +215,5 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# Haskell ghcup
+[ -f "/home/locnnil/.ghcup/env" ] && . "/home/locnnil/.ghcup/env" # ghcup-env
