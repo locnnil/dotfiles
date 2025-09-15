@@ -180,10 +180,6 @@ setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# leave deactivated
-conda deactivate
-# <<< conda initialize <<<
-
 ## Export Clang to PATH
 export PATH=$PATH:/usr/lib/llvm-19/bin/
 
