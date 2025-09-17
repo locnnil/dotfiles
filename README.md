@@ -5,7 +5,8 @@ This is my personal `tmux`, `zsh` and `neovim` configuration
 ## Requirements
 
 ```bash
-sudo apt install -y tmux zsh neovim stow
+sudo apt install -y tmux zsh stow
+sudo snap install nvim --classic
 ```
 
 ## Instalation
