@@ -199,3 +199,6 @@ esac
 
 # Haskell ghcup
 [ -f "/home/locnnil/.ghcup/env" ] && . "/home/locnnil/.ghcup/env" # ghcup-env
+
+# Set nvim as default editor
+export EDITOR=nvim
