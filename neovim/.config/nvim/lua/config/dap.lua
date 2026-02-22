@@ -29,6 +29,21 @@ return {
           cwd = "${workspaceFolder}",
           stopAtBeginningOfMainSubprogram = false,
         },
+        -- ── Linux Kernel via QEMU ──────────────────────────────────────
+        {
+          name = "Linux Kernel (QEMU)",
+          type = "gdb",
+          request = "attach",
+          program = function()
+            return vim.fn.input("vmlinux: ", vim.fn.getcwd() .. "/vmlinux", "file")
+          end,
+          target = "localhost:1234", -- maps to GDB's `target remote`
+          stopAtConnect = true,
+          setupCommands = {
+            { text = "set architecture i386:x86-64" },
+            { text = "set disassembly-flavor intel" },
+          },
+        },
       }
 
       -- ── UI setup ───────────────────────────────────────────────────
