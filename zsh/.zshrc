@@ -152,7 +152,7 @@ alias fd=fdfind
 
 ### Golang binaries
 export PATH=$PATH:$HOME/go/bin
-eval "$(~/.local/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
 
 # OLD: 'LESS=-R'
 export LESS="-RFX"
