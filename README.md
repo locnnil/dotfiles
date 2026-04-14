@@ -13,7 +13,7 @@ sudo snap install nvim --classic
 
 - clone this repository:
 ```bash
-git clone git@github.com:LOCNNIL/dotfiles.git
+git clone git@github.com:locnnil/dotfiles.git
 ```
 
 - Get the submodules:
