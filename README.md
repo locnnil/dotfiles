@@ -18,7 +18,7 @@ git clone git@github.com:LOCNNIL/dotfiles.git
 
 - Get the submodules:
 ```bash
-git submodule update --init --recursive
+git submodule update --init --recursive --jobs $(nproc)
 ```
 
 - From inside the folder run stow to apply the configs:
