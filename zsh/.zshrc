@@ -123,11 +123,6 @@ export PATH=~/.local/bin:~/.cargo/bin:/usr/local/go/bin:$PATH
 alias ls='eza --icons'
 alias bat='batcat'
 
-export PATH=~/.bin/bin/:$PATH
-
-
-export PATH=$PATH:/$HOME/bin
-
 # Exporting GPG keys ### ABORTING THIS...
 # [ -f ~/.zshrc ] && echo -e '\nexport GPG_TTY=$(tty)' >> ~/.zshrc
 
