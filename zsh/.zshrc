@@ -168,8 +168,6 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 setopt HIST_BEEP                 # Beep when accessing nonexistent history.
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 ## Export Clang to PATH
 export PATH=$PATH:/usr/lib/llvm-19/bin/
 
