@@ -9,6 +9,7 @@ size = 16
 [servers.liberachat]
 nickname = "locnnil"
 server = "irc.libera.chat"
+port = 6697
 channels = [
   "#halloy",
   "#linux",
@@ -29,7 +30,9 @@ channels = [
   "#debian-offtopic",
   "#debian-mentors",
   "#salsa",
+  "#linux-kernel",
   "#kernelnewbies",
+  "#netdev",
   "#bpf",
   "#cilium",
 ]
