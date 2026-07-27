@@ -24,4 +24,12 @@ channels = [
 nickname = "locnnil"
 server = "irc.oftc.net"
 port = 6697
-channels = ["#debian", "#debian-mentors", "#salsa"]
+channels = [
+  "#debian",
+  "#debian-offtopic",
+  "#debian-mentors",
+  "#salsa",
+  "#kernelnewbies",
+  "#bpf",
+  "#cilium",
+]
