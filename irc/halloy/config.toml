@@ -27,8 +27,10 @@ server = "irc.oftc.net"
 port = 6697
 channels = [
   "#debian",
-  "#debian-offtopic",
+  "#debian-br",
+  "#debian-mg",
   "#debian-mentors",
+  "#debian-offtopic",
   "#salsa",
   "#linux-kernel",
   "#kernelnewbies",
